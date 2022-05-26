@@ -1,12 +1,12 @@
 import os
 
-print("[* Configuring tmux ...]")
+print("[*] Configuring tmux ...")
 os.system('wget https://raw.githubusercontent.com/lafx0/dotfiles/main/.tmux.conf -O ~/.tmux.conf')
 os.system("git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm")
 os.system("tmux source ~/.tmux.conf")
-print("[* tmux configured! Enjoy :)]")
+print("[+] tmux configured! Enjoy :) ")
 
-print("[* Now configuring vim ...")
+print("\n[*] Now configuring vim ...")
 os.system("wget https://raw.githubusercontent.com/lafx0/dotfiles/main/.vimrc -O ~/.vimrc")
 os.system("source ~/.vimrc")
-print("vim configured! Enjoy :)")
+print("[+] vim configured! Enjoy :) ")
